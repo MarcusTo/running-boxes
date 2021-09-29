@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fea209;
+}
+
+.container{
+
+    margin: 2rem auto;
+    height: 804px;
+    width: 804px;
+    background-image:url(mountain);
+    position: relative;
+    
+}
+.box{
+
+    position: absolute;
+    border-radius: 5%;
+    height: 200px;
+    width: 200px;
+    animation-name: runningBox;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+@keyframes runningBox{
+    0%{right: 0; bottom: 140px;}
+    50%{right: 600px; bottom: 140px;}
+    100%{right:0; bottom: 140px;} 
+}
+
+.box1{
+ 
+    position: absolute;
+    border-radius: 5%;
+    height: 200px;
+    width: 200px;
+    animation-name: runningBox1;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+@keyframes runningBox1{
+    0%{left: 0; bottom: 10px;}
+    50%{left: 600px; bottom: 10px;}
+    100%{left:0; bottom: 10px;}
+
+    
+}
+
+/*@keyframes runningBox{
+    0% {left: 0; top: 0;}
+    10% {left: 30px; top: 45px;}
+    25% {left: 35px; top: 50px;}
+    35% {left: 25px; top: 46px;}
+    45% {left: 15px; top: 35px;}
+    55% {left: 10px; top: 29px;}
+    65% {left: 8px; top: 25px;}
+    75% {left: 10px; top: 21px;}
+    85% {left: 14px; top: 23px;}
+    95% {left: 17px; top: 28px;}
+    100% {left: 28px; top: 33px;}
+}/*
